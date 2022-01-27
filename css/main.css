@@ -348,6 +348,9 @@ a {
 .card__image--nexzen {
   background-image: url('../images/work/nexzen.png');
 }
+.card__image--assignment{
+  background-image: url('../images/work/reactassignment.png');
+}
 .card__title {
   color: #696969;
   font-size: 1.25rem;
