@@ -13,6 +13,9 @@ html {
   overflow-x: hidden;
   text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
+body{
+  overflow-x: hidden;
+}
 
 a {
   color: currentColor;
@@ -239,7 +242,10 @@ a {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -moz-font-feature-settings: "liga" on;
+  z-index: -10;
+  padding-top: 10%;
 }
+
 .btn {
   background-color: white;
   border: 1px solid #cccccc;
@@ -249,13 +255,18 @@ a {
 }
 .btn--block {
   display: block;
-  width: 100%;
+  width: 40%;
+  border-radius: 15px;
 }
-.btn:hover{
-  background-color: #fff;
-  color:#180CAC;
+ .btn--block:hover{
+  background-color: #180CAC !important;
+  color:#fff;
   font-weight: bold;
   border: 1px solid #180CAC;
+  cursor: pointer;
+  transform: scaleX(1.1) ;
+  transition: 300ms;
+  
 }
 .cards {
   display: flex;
@@ -263,10 +274,12 @@ a {
   list-style: none;
   margin: 0;
   padding: 0;
+
 }
 .cards__item {
   display: flex;
   padding: 1rem;
+  
 }
 @media (min-width: 40rem) {
   .cards__item {
@@ -285,6 +298,9 @@ a {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  border-top-right-radius: 20%;
+  border-top-left-radius: 20%;
+  border-bottom-right-radius: 20%;
 }
 .card:hover .card__image {
   filter: contrast(100%);
