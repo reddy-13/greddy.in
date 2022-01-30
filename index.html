@@ -11,45 +11,35 @@
   <link rel="stylesheet" type="text/css" href="css/animation.css">
   <script defer type="text/javascript" src="js/main.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+  
   <title>Goutham Reddy – CTO</title>
   <style>
-    section{
+    /* section{
       position: relative;
       display: flex;
       flex-direction: column;
       align-items: center;
-    }
-    .curve{
-      position: absolute;
-      height: 225px;
-      width: 100%;
-      bottom: 0;
-    }
-    .curve::before{
-      content: '';
-      position: absolute;
-      border-radius: 100% 50%;
-      width: 55%;
-      height: 100%;
-     
-      background-color:  #f14242;
-  background-image: linear-gradient(to  right, #fa5151, #f14242);
-      transform: translate(85% , 60%);
-      z-index: 1;
-    }
-    .curve::after{
-      content: '';
-      position: absolute;
-      border-radius: 100% 50%;
-      width: 55%;
-      height: 100%;
-      background-color: #00bcf1;
-  background-image: linear-gradient(to bottom right, #19b1dbc9, #4637eb);
+    } */
+    .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
 
-      transform: translate(-4% , 40%);
-      z-index: 1;
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
 
-    }
+.wave .shape-fill {
+    fill: #eb4545;
+}
   </style>
 </head>
 
@@ -57,7 +47,7 @@
   <div id="wallpaper" class="wallpaper" data-image="images/austria.jpg"></div>
   <div class="content">
      <aside class="side">
-      <figure id="picture" class="picture">
+      <figure id="picture" class="picture" data-tilt>
         <div class="picture-shadow"></div>
         <img id="pictureImage" class="picture-image" data-image="images/reddy.jpg" src="images/goutham_reddy.jpg" alt="Portrait of Alex Jefferson"
           width="320" height="320">
@@ -99,10 +89,11 @@
         </li>
       </ul>
       </main>
-      <div class="curve"></div>
+     
   </div>
+  <section>
   <div class="work">
-    <h1 style="color: white; font-size: 42px; text-align: center; margin: 5% 0;">MY WORK 💪</h1>
+    <h1 style="color: white; font-size: 42px; text-align: center; margin-bottom: 8%;">MY WORK 💪</h1>
     <ul class="cards">
       <li class="cards__item">
         <div class="card">
@@ -119,7 +110,7 @@
               <li>Pagination </li>
             </ul> 
               
-            <a href="https://greddy.in/assignment/" target="_blank"><button class="btn btn--block card__btn">VIEW</a> </button></a>
+            <a href="https://greddy.in/assignment/" target="_blank"><button class="btn btn--block card__btn">VIEW </button></a>
           </div>
         </div>
       </li>
@@ -130,7 +121,7 @@
             <div class="card__title">Nexzen school app👶 -Android</div>
             <p class="card__text">This is a students management app, Where Parents can track their children progress in school.
               They can also track their attendance and entry timing, holidays, events, result, exam notifications, school profile etc. </p>
-            <a href="https://play.google.com/store/apps/details?id=com.nexzenstudent" target="_blank"><button class="btn btn--block card__btn">VIEW</a> </button></a>
+            <a href="https://play.google.com/store/apps/details?id=com.nexzenstudent" target="_blank"><button class="btn btn--block card__btn">VIEW </button></a>
           </div>
         </div>
       </li>
@@ -140,7 +131,7 @@
           <div class="card__content">
             <div class="card__title">PROFOLIO📸 - React js </div>
             <p class="card__text">Porfolio is a dynamic website. Built with react js , firebase and with some brains 🧠 (<a href="https://aarhatiserv.com/about-us" target="_blank" style="color:green" title="AARHAT TEAM">AARHAT TEAM</a>) . It's a horizontally scalable web application for professionals.</p>
-            <a href="https://profolio.live/" target="_blank"><button class="btn btn--block card__btn">VIEW</a> </button></a>
+            <a href="https://profolio.live/" target="_blank"><button class="btn btn--block card__btn">VIEW </button></a>
           </div>
         </div> 
       </li>
@@ -150,7 +141,7 @@
           <div class="card__content">
             <div class="card__title">AARHAT landing page 🦹 - Next JS</div>
             <p class="card__text">This website is built on top of Next.js. Optimized for fast loads..🤖 </p>
-            <a href="https://aarhat-next.vercel.app//" target="_blank"><button class="btn btn--block card__btn">VIEW</a> </button></a>
+            <a href="https://aarhat-next.vercel.app//" target="_blank"><button class="btn btn--block card__btn">VIEW </button></a>
           </div>
         </div>
       </li>
@@ -160,7 +151,7 @@
           <div class="card__content">
             <div class="card__title">SPRING & FALL 🦋 Codeignigter 4</div>
             <p class="card__text">Spring and fall is coupled with codeginier 4 and vanila JS. Designed and architectured spcially for it's purpose.👩‍🎓"</p>
-            <a href="https://springandfall.in/" target="_blank"><button class="btn btn--block card__btn">VIEW</a> </button></a>
+            <a href="https://springandfall.in/" target="_blank"><button class="btn btn--block card__btn">VIEW </button></a>
           </div>
         </div>
       </li>
@@ -171,13 +162,26 @@
           <div class="card__content">
             <div class="card__title">Tasync 🤝 - Coming soon</div>
             <p class="card__text">Can't talk much.. it's coming soon.. all i can say this app is for SME."</p>
-            <a href="#tasync" onclick="alert('I said it\'s coming soon...!!')"><button class="btn btn--block card__btn">VIEW</a> </button></a>
+            <a href="#tasync" onclick="alert('I said it\'s coming soon...!!')"><button class="btn btn--block card__btn">VIEW </button></a>
           </div>
         </div>
       </li>
     </ul>
   </div>
+  <div class="wave">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+</div>
+</section>
   
+<!-- js  -->
+<!-- jquery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+<!-- jquery ends -->
+<!-- tilt -->
+<script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script>
+<!-- js ens -->
 </body>
 
 </html>

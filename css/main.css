@@ -35,6 +35,8 @@ a {
 .wallpaper,
 .picture-shadow,
 .picture-image {
+  transform-style: preserve-3d;
+  transform: translateZ(20px);
   display: block;
   height: 100%;
   left: 0;
@@ -230,8 +232,8 @@ a {
 
 .work{
 
-  background-color: #f58a8a;
-  background-image: linear-gradient(to top right, #ff7070, #f14242);
+  background-color: #eb4545;
+  background-image: linear-gradient(to top bottom, #eb4545, #f86c6c);
   color: #999999;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
@@ -259,14 +261,20 @@ a {
   border-radius: 15px;
 }
  .btn--block:hover{
-  background-color: #180CAC !important;
-  color:#fff;
+  /* background-color: #180CAC !important; */
+  /* color: #180CAC; */
   font-weight: bold;
-  border: 1px solid #180CAC;
+  /* border: 1px solid #180CAC; */
   cursor: pointer;
-  transform: scaleX(1.1) ;
-  transition: 300ms;
+  transform: scale(1.02) translateY(-2px);
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+  transition-duration: 100ms;
   
+}
+.btn--block:active{
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  transform: scale(0.98) translateY(-2px);
+  transition-duration: 100ms;
 }
 .cards {
   display: flex;
