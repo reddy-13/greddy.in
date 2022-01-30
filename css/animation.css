@@ -3,6 +3,7 @@
     opacity: 0;
     transform: scale(0.5);
   }
+
   to {
     opacity: 1;
     transform: scale(1);
@@ -13,6 +14,7 @@
   from {
     transform: scaleX(0);
   }
+
   to {
     transform: scaleX(1);
   }
@@ -23,6 +25,7 @@
     opacity: 0;
     transform: scale(1.2) translateY(-1rem);
   }
+
   to {
     opacity: 1;
     transform: scale(1) translateY(0);
@@ -34,6 +37,7 @@
     opacity: 0;
     transform: scale(1.2) translateY(4rem);
   }
+
   to {
     opacity: 1;
     transform: scale(1.1) translateY(0);
@@ -45,6 +49,7 @@
     opacity: 0;
     transform: translateY(-2rem);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -56,6 +61,7 @@
     opacity: 0;
     transform: translateY(1rem);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -67,6 +73,7 @@
     opacity: 0;
     transform: scale(1.05);
   }
+
   to {
     opacity: 0.2;
     transform: scale(1);
@@ -96,6 +103,7 @@
   animation-timing-function: ease-out;
 }
 
+
 .picture-shadow,
 .picture-image {
   animation-duration: 750ms;
@@ -103,7 +111,6 @@
 }
 
 /* Initial state */
-
 .wallpaper,
 .picture-shadow,
 .picture-image {
@@ -116,9 +123,11 @@
   animation-name: zoomOut;
 }
 
+
 .picture.is-loaded .picture-shadow {
   animation-name: picShadow;
 }
+
 
 .picture.is-loaded .picture-image {
   animation-name: picImage;
@@ -128,6 +137,7 @@
   animation-name: slideDown;
 }
 
+
 .job {
   animation-name: slideUp;
 }
@@ -135,6 +145,7 @@
 .hr {
   animation-name: fillUp;
 }
+
 
 .description {
   animation-name: slideUp;
@@ -150,10 +161,18 @@
   animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1.5);
 }
 
+.wave {
+  animation-name: slideUp;
+}
+
 /* Delays */
 
 .name {
   animation-delay: 100ms;
+}
+
+.wave {
+  animation-delay: 200ms;
 }
 
 .job {
@@ -167,6 +186,7 @@
 .description {
   animation-delay: 400ms;
 }
+
 
 .picture-image {
   animation-delay: 500ms;

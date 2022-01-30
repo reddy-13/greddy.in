@@ -13,26 +13,28 @@ html {
   overflow-x: hidden;
   text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
-body{
+
+body {
   overflow-x: hidden;
 }
-body{overflow-x:hidden!important;-ms-overflow-style:none;scrollbar-width:none}body::-webkit-scrollbar{display:none}
+
 /* scroll bass css */
 body::-webkit-scrollbar {
   width: 0.3em;
 
 }
 
- 
+
 body::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
- 
+
 body::-webkit-scrollbar-thumb {
   background-color: #ff470f;
   outline: 1px solid rgb(243, 215, 237);
   border-radius: 25px;
 }
+
 /* scrooll bar css ends */
 
 a {
@@ -82,7 +84,7 @@ a {
   background-position: center;
   background-size: cover;
   opacity: 0.2;
-  position:sticky;
+  position: sticky;
 }
 
 .button {
@@ -134,7 +136,7 @@ a {
 .social a:active {
   opacity: 1;
   transform: scale(1.1);
-  }
+}
 
 .button:hover {
   box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
@@ -177,10 +179,12 @@ a {
   position: relative;
   min-height: 100vh;
 }
+
 .side {
   max-height: 20rem;
   max-width: 20rem;
 }
+
 .about {
   max-width: 26rem;
 }
@@ -217,6 +221,7 @@ a {
     align-items: center;
     padding: 5rem 3rem;
   }
+
   .side {
     margin-bottom: 3rem;
     width: 100%;
@@ -230,6 +235,7 @@ a {
     justify-content: space-evenly;
     padding: 4rem;
   }
+
   .side {
     flex-grow: 0;
     flex-shrink: 0;
@@ -238,6 +244,7 @@ a {
     order: 2;
     width: 20rem;
   }
+
   .about {
     flex-grow: 1;
     flex-shrink: 1;
@@ -248,7 +255,7 @@ a {
 
 /* portfolios section css */
 
-.work{
+.work {
 
   background-color: #eb4545;
   background-image: linear-gradient(to top bottom, #eb4545, #f86c6c);
@@ -261,7 +268,7 @@ a {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -moz-font-feature-settings: "liga" on;
+  -moz-font-feature-settings: "liga"on;
   z-index: -10;
   padding-top: 10%;
 }
@@ -273,12 +280,14 @@ a {
   padding: 0.5rem;
   text-transform: lowercase;
 }
+
 .btn--block {
   display: block;
   width: 40%;
   border-radius: 15px;
 }
- .btn--block:hover{
+
+.btn--block:hover {
   /* background-color: #180CAC !important; */
   /* color: #180CAC; */
   font-weight: bold;
@@ -287,13 +296,15 @@ a {
   transform: scale(1.02) translateY(-2px);
   box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
   transition-duration: 100ms;
-  
+
 }
-.btn--block:active{
+
+.btn--block:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
   transform: scale(0.98) translateY(-2px);
   transition-duration: 100ms;
 }
+
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -302,21 +313,25 @@ a {
   padding: 0;
 
 }
+
 .cards__item {
   display: flex;
   padding: 1rem;
-  
+
 }
+
 @media (min-width: 40rem) {
   .cards__item {
     width: 50%;
   }
 }
+
 @media (min-width: 56rem) {
   .cards__item {
     width: 33.3333%;
   }
 }
+
 .card {
   background-color: white;
   border-radius: 0.25rem;
@@ -328,15 +343,18 @@ a {
   border-top-left-radius: 20%;
   border-bottom-right-radius: 20%;
 }
+
 .card:hover .card__image {
   filter: contrast(100%);
 }
+
 .card__content {
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
   padding: 1rem;
 }
+
 .card__image {
   background-position: center center;
   background-repeat: no-repeat;
@@ -348,35 +366,44 @@ a {
   position: relative;
   transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
 }
+
 .card__image::before {
   content: "";
   display: block;
   padding-top: 56.25%;
 }
+
 @media (min-width: 40rem) {
   .card__image::before {
     padding-top: 66.6%;
   }
 }
+
 .card__image--springandfall {
   background-image: url('../images/work/springandfall.png');
 }
+
 .card__image--profolio {
   background-image: url('../images/work/profolio.png');
 }
+
 .card__image--aarhat-next {
   background-image: url('../images/work/aarhat_next.png');
 }
+
 .card__image--tasync {
   background-image: url('https://aarhatiserv.com/assets/images/tasync.png');
 }
+
 /* nexzen */
 .card__image--nexzen {
   background-image: url('../images/work/nexzen.png');
 }
-.card__image--assignment{
-  background-image: url('../images/work/reactassignment.png');
+
+.card__image--assignment {
+  background-image: url('../images/work/friends_widget.png');
 }
+
 .card__title {
   color: #696969;
   font-size: 1.25rem;
@@ -384,6 +411,7 @@ a {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+
 .card__text {
   flex: 1 1 auto;
   font-size: 0.875rem;
