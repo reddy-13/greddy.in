@@ -149,8 +149,10 @@ a {
 }
 
 .job {
-  color: #ffe479;
+  color: #f10788;
+  font-weight: bold;
   font-size: 0.75rem;
+  box-shadow: inset;
 }
 
 .hr {
@@ -420,3 +422,28 @@ a {
 }
 
 /* portfolios section css ends*/
+
+
+/* feed back section starts*/
+  .feed-back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 5% auto;
+  }
+  .feed-back h2{
+    font-size: 32px;
+    text-decoration: underline;
+  }
+  .feed-back h3{
+    margin-bottom: 2%;
+    font-size: 22px;
+  }
+  .feed-back .form{
+    display: flex;
+    flex-direction: column;
+  }
+/* feed back section ends*/
