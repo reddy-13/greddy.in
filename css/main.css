@@ -104,6 +104,7 @@ a {
   will-change: box-shadow, transform;
 }
 
+
 .social {
   display: flex;
   margin-top: 1.5rem;
@@ -138,7 +139,7 @@ a {
   transform: scale(1.1);
 }
 
-.button:hover {
+.button:hover, .submit-button:hover {
   box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
   transform: scale(1.02) translateY(-4px);
 }
@@ -436,7 +437,15 @@ a {
   }
   .feed-back h2{
     font-size: 32px;
-    text-decoration: underline;
+    
+    background-color: rgba(125, 127, 233, 0.692);
+    box-shadow: 2px 8px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-decoration: underline rgb(199, 194, 194);
+
+    line-height: 1.2rem;
+    margin-bottom: 20px;
+    padding: 20px;
   }
   .feed-back h3{
     margin-bottom: 2%;
@@ -445,5 +454,39 @@ a {
   .feed-back .form{
     display: flex;
     flex-direction: column;
+    margin-top: 3%;
+    width: 30%;
+    /* background-color: rgba(125, 127, 233, 0.692); */
+    /* padding: 100px; */
   }
+
+  .feed-back .form .form-input{
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    box-shadow: inset 5px;
+    
+  }
+  .feed-back .form .form-input:focus{
+    border-radius: 8px;
+    box-shadow: 2px 5px 9px rgba(0, 0, 0, 0.5);
+    color: #555;
+    outline: rgb(34, 13, 155) 2px solid;
+    font-style: italic;
+    font-weight: lighter;
+    caret-color: blueviolet;
+  }
+  .submit-button{
+    border: none;
+    font-family: "Montserrat", "Quicksand", sans-serif;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: rgb(34, 13, 155);
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  
 /* feed back section ends*/
